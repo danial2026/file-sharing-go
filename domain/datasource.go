@@ -3,7 +3,7 @@ package domain
 import (
 	"database/sql"
 	"fmt"
-    _ "github.com/Go-SQL-Driver/MySQL"
+    _ "github.com/go-sql-driver/mysql"
 )
 
 var (

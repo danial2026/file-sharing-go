@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./app"
+	"github.com/danial2026/file-sharing-go/app"
 )
 
 func main() {
