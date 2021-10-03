@@ -19,7 +19,7 @@ func (controller filesController) JsonResponse(c *gin.Context, http_status int, 
 
     c.Header("Content-Type", "application/json")
 
-     var response_json response
+    var response_json response
 
     response_json.Status=http_status
     response_json.Message=messege
