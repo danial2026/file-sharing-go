@@ -1,10 +1,12 @@
 package app
 
 import (
-	"github.com/danial2026/file-sharing-go/controllers"
+	controllers "github.com/danial2026/file-sharing-go/controllers/files"
+	appKafka "github.com/danial2026/file-sharing-go/controllers/kafka"
 )
 
 func mapUrls() {
+	go appKafka.StartKafka()
 	prefix := "/api/v1/files"
 
 	router.GET(prefix+"/download", controllers.FilesController.Log)

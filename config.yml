@@ -1,0 +1,4 @@
+server:
+  brokers: "localhost:9092"
+  topic: mytopic
+  groupID: g1
